@@ -2,7 +2,7 @@ const navber = () => {
     let nav = document.querySelector('.container');
     nav.innerHTML =`
     <ul>
-    <li id="fst"  class="n-li"><a href="/Portofolio/inbox.html"><i class="fas fa-home n-logo"></i><span class="n-text">home</span></a></li>
+    <li id="fst"  class="n-li"><a href="/Portofolio/index.html"><i class="fas fa-home n-logo"></i><span class="n-text">home</span></a></li>
 
     <li id="snd" class="n-li"><a href="/Portofolio/about.html"><i class="fas fa-user n-logo"></i><span class="n-text">about</span></a></li>
 
