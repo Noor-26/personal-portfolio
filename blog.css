@@ -1,0 +1,183 @@
+@import url(nav.css);
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#blog{
+    height: max-content;
+    padding-bottom: 50px;
+}
+
+.b-head{
+    text-align: center;
+    margin: 20px;
+    padding-top: 20px;
+    color: white;
+    font-size: 2.5rem;
+    font-family: 'Pushster', cursive;
+    letter-spacing: 1px;
+}
+.b-head_c{
+    font-family: 'Roboto Slab', serif;
+    letter-spacing: 1px;
+    
+    
+}
+.b-h{
+    color: crimson;
+    text-transform: uppercase;
+}
+.b-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row-gap: 50px;
+    width: 80%;
+    margin: 30px 10%;
+
+}
+
+
+
+.b-img img:hover{
+    transform: scale(1.2);
+    
+}
+.b-img img{
+    
+    width: 20vw;
+    height: 25vh;
+    object-fit: cover;
+    overflow: hidden;
+    transition: transform .3s linear;
+}
+.b-img{
+   overflow: hidden;
+    width: 100%;
+    cursor: pointer;
+    height: 100%;
+}
+.b-content{
+    border: 2px solid crimson;
+    width: 75%;
+    height: max-content;
+    text-align: center;
+    margin: 10%;
+    border-radius: 12px;
+    overflow: hidden;
+}
+.b-p{
+    line-height: 20px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+.b-text{
+    line-height: 40px;
+    position: relative;
+    bottom: 25px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    color: white;
+}
+.b-details{
+    width:max-content;
+    padding: 0 10px;
+    font-family:poppins;
+    font-weight: 600;
+    background-color: #1a1a1a;
+    color: white;
+    font-size: 13px;
+    letter-spacing: 1px;
+    border-radius: 20px;
+}
+.el{
+    border-left: 2px solid crimson;
+    padding-left: 5px;
+    text-align: center;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    font-size: 13px;
+}
+.b-p{
+    font-family: poppins;
+    margin: 5px;
+    font-size: 14px;
+}
+
+.b-btn{
+    background-color: black;
+    color: white;
+    width: 100px;
+    height: 25px;
+    border: none;
+    border-radius: 20px ;
+    box-shadow: 0px 0px 3px 3px crimson;
+    margin-top: 10px;
+    text-transform: capitalize;
+    font-size: 0.7em;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-family: 'Yuji Hentaigana Akebono', cursive;
+    cursor: pointer;
+}
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: crimson;
+    border-radius: 12px;
+}
+
+.b-btn:hover{
+    background-color: crimson;
+    color: black;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 850px) {
+    .b-container{
+        grid-template-columns: 1fr 1fr;
+    }
+    .b-img img{
+        width: 40vw;
+    }
+}
+@media screen and (max-width: 650px) {
+    .b-container{
+        grid-template-columns: 1fr;
+        width: 60%;
+        margin: 30px 20%;
+    }
+    .b-img img{
+        width: 50vw;
+    }
+}
+@media screen and (max-width: 480px) {
+    .b-container{
+        grid-template-columns: 1fr;
+        width: 80%;
+        margin: 30px 10%;
+    }
+    .b-img img{
+        width: 70vw;
+    }
+    .el , .b-details{
+        font-size: 11px;
+        letter-spacing: 1px;
+    }
+    .b-content{
+        width: 80%;
+    }
+    .b-p{
+        font-family: poppins;
+        margin: 5px;
+        font-size: 12px;
+    }
+    .b-btn{
+        font-size: 0.6em;
+    }
+}

@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 2px solid red; */
+}
+body{
+    background: black;
+}
+.n-logo{
+    /* width:18px; */
+    margin-right :10px;
+    color: crimson;
+    font-size: 17px;
+    /* position: relative;
+    top: 2px; */
+    /* margin-top: 15px; */
+}
+
+ul{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    box-sizing: border-box;
+    
+    height: auto;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    /* align-items: flex-end; */
+    position: fixed;
+  
+
+}
+.n-li{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    list-style: none; 
+    background-color: #1a1a1a;
+    text-align: center;
+    border-left: 2px solid black;
+    /* border: 2px solid black; */
+    /* margin-right: 5px; */
+    font-family: poppins;
+    font-weight: 900;
+    letter-spacing: 1px;
+    height: 8vh;
+}
+
+li:hover{
+    background-color: black;
+}
+
+::-webkit-scrollbar{
+    width: 8px;
+    position: absolute;
+    z-index: -1
+}
+::-webkit-scrollbar-thumb{
+    background-color: crimson;
+    border-radius: 12px;
+}
+a{
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+    text-transform: capitalize;
+    cursor: pointer;
+    /* border: 2px solid red; */
+    /* width: 200px; */
+    
+}
+#fith{
+    border-right: 2px solid black;
+    
+}
+@media screen and (max-width:673px) {
+    .n-text{
+        display: none;
+        
+    }
+    .n-logo{
+        width: 15px;
+        margin:0;
+    }
+}
+@media screen and (max-width:450px) {
+    .n-logo{
+        width: 13px;
+    }
+}

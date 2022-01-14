@@ -1,0 +1,279 @@
+@import url(nav.css);
+
+*{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    color: white;
+}
+
+/* header */
+
+#head{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 50px;
+    height: max-content;
+    
+}
+.img-wid{
+    width: 45vw;
+    padding: 20px;
+}
+.h-box_1{
+    height: max-content;
+    width: 50vw;
+    padding: 20px;
+}
+.h-text{
+    font-size: 2rem;
+    text-transform: capitalize;
+}
+.h-p{
+    margin: 10px 0;
+    text-align: justify;
+}
+.n-li{
+    font-weight: 700;
+}
+.btn{
+    padding: 5px 25px;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    margin: 15px 0;
+    font-weight: bold;
+    letter-spacing: 1px;
+    background-image: linear-gradient(45deg,rgb(252, 44, 17),rgb(255, 187, 0) );
+    cursor: pointer;
+}
+/* dream area */
+
+#dream-area{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 50px;
+}
+.d-h_2{
+    font-size: 1.7rem;
+}
+.h-padd{ 
+     height: max-content;
+     padding-bottom: 20px;
+}
+
+/* experiance */
+
+#experiance{
+    height: max-content;
+    padding: 50px 40px ;
+}
+.ex-head{
+    font-size: 2rem;
+}
+.ex-box{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 50px ;
+}
+.box-wid{
+    width: 30vw;
+    box-shadow: 10px 0px 30px  black;
+    padding: 20px;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+#ex-box_1{
+    border-left: 6px solid;
+    border-image: linear-gradient(crimson,orange);
+    border-image-slice: 1;
+    border-bottom: 6px solid;
+}
+#ex-box_2{
+    border-left: 6px solid;
+    border-bottom: 6px solid;
+    border-image: linear-gradient(rgb(0, 60, 255),cyan);
+    border-image-slice: 1;
+}
+.ex-head_1{
+    font-size: 1.7rem;
+    text-transform: capitalize;
+}
+.ex-head_2{
+    color: rgb(252, 92, 0);
+}
+.ex-c{
+    color: #00fff3;
+}
+.ex-p{
+    text-align: justify;
+}
+
+/* skils */
+
+#skils{
+    height: 600px;
+    width: 100%;
+}
+.s-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 400px;
+    text-align: center;
+}
+.s-head{
+    font-size: 2.2rem;
+    padding: 40px 40px;
+    font-family: 'Pushster', cursive;
+}
+.s-head_1{
+    text-transform: uppercase;
+    color: red;
+    font-family: 'Pushster', cursive;
+}
+.git{
+    border-radius: 50%;
+}
+.s-text{
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    letter-spacing: 1px;
+}
+
+/* media quarys */
+
+@media screen and (max-width:800px) {
+    .h-padd{
+        padding-left: 10px;
+    }
+    #dream-area{
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    }
+    .ex-box{
+        flex-direction: column;
+    }
+    .box-wid{
+        width: 75vw;
+        margin-bottom: 30px;
+    }
+  #experiance{
+      margin: 10px ;
+  }
+    #dream-area{
+        margin-bottom: 100px;
+    }
+}    
+
+@media screen and (max-width: 850px) {
+ 
+    .s-img{
+        width: 20vw;
+    }
+}
+
+@media screen and (max-width: 650px){
+    #head{
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+    .h-box_1{
+        padding: 0;
+        width: 80vw;
+    }
+    .img-wid{
+        width: 100vw;
+    }
+    #dream-area{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+    }
+    body{
+        padding-bottom: 50px;
+    }
+    .h-padd{
+        padding-top: 20px;
+        padding-left: 10px;
+    }
+    #skils{
+        height: max-content;
+        text-align: center;
+        margin: 0;
+    }
+    .ex-box{
+        padding: 20px 0; 
+    }
+    .box-wid{
+        box-shadow: 10px 5px 20px 0px black;
+    }
+    .ex-p{
+        font-size: 14px;
+    }
+    .ex-head_2{
+        font-size: 12px;
+        padding: 5px 0;
+        letter-spacing: 1px;
+    }
+    .ex-head_1{
+        font-size: 25px;
+    }
+    .s-head{
+        font-size: 2.5rem;
+        padding-top: 20px;
+    }
+    .ex-head{
+        margin-bottom: 15px;
+    }
+    .s-container{
+        flex-direction: column;
+        height: max-content;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    #experiance{
+        height: max-content;
+        padding-bottom: 0;
+        margin-bottom: 0;
+        padding-top: 0;
+    }
+    .s-img{
+        width: 30vw;
+    }
+    .skils-t{
+        margin: 20px 0;
+    }
+}
+
+@media screen and (max-width: 385px) {
+    .h-text{
+        font-size: 1.6rem;
+    }
+    .h-p{
+        font-size: 14px;
+    }
+    #ex-box_1{
+        border-bottom: none;
+        border-top: 6px solid ;
+    }
+    #ex-box_2{
+        border-left: 6px solid;
+        border-bottom: none;
+        border-top: 6px solid;
+        border-image: linear-gradient(rgb(0, 60, 255),cyan);
+        border-image-slice: 1;
+    }
+    body{
+        padding-bottom: 50px;
+    }
+}
+
